@@ -10,10 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
 
     <title>Elegance - Creative HTML5 Template</title>
-<!--
-Elegance Template
-https://templatemo.com/tm-528-elegance
--->
+
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
@@ -422,6 +419,16 @@ https://templatemo.com/tm-528-elegance
 
     <script src="js/custom.js"></script>
 
+    <script>
+        const password = "stars******"; 
+        const userPassword = prompt("Enter the password to access this page:");
 
+        if (userPassword === password) {
+            document.body.style.display = "block"; 
+        } else {
+            alert("Incorrect password. You cannot view this page.");
+            window.location.href = "https://google.com"; 
+        }
+    </script>
   </body>
 </html>
